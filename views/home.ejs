@@ -1,0 +1,37 @@
+<%- include("./base/header.ejs") %>
+<div class="contaier">
+    <div class="alert bg-success my-3">
+        <h4 class="text-center text-white">Add new student</h4>
+
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form action="/add/student" method="post">
+            <div class="mt-5">
+                <label for="form-label">Roll No: </label>
+                <br>
+                <input type="text" placeholder="Enter your Rollno" class="form-control" name="rollNo">
+                <label for="form-label">Name: </label>
+                <br>
+                <input type="text" placeholder="Enter your name" class="form-control" name="studentName">
+                <label for="form-label">Father name: </label>
+                <br>
+                <input type="text" placeholder="Enter your Father name" class="form-control" name="fatherName">
+                <label for="form-label">Aadhaar Card No: </label>
+                <br>
+                <input type="text" placeholder="Enter your Aadhaar no." class="form-control" name="aadharCardNo">
+                <label for="form-label">Mobile No: </label>
+                <br>
+                <input type="text" placeholder="Enter your Mobile no." class="form-control" name="mobileNo">
+                <input type="submit" class=" btn btn-outline-success mt-3 " value="Add Student">
+                </form>
+                
+            </div>
+
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<%- include("./base/footer.ejs") %>
