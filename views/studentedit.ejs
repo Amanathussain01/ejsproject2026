@@ -7,23 +7,23 @@
     <div class="row">
         <div class="col"></div>
         <div class="col">
-        <form action="/edit/student/<%= student._id%>" method="post">
+        <form class="needs-validation" action="/edit/student/<%= student._id%>" method="post">
             <div class="mt-5">
                 <label for="form-label">Roll No: </label>
                 <br>
-                <input type="text" placeholder="Enter your Rollno" class="form-control" name="rollNo" value="<%= student.rollNo %>">
+                <input type="text" placeholder="Enter your Rollno" class="form-control" name="rollNo" value="<%= student.rollNo %>" required>
                 <label for="form-label">Name: </label>
                 <br>
-                <input type="text" placeholder="Enter your name" class="form-control" name="studentName" value="<%= student.studentName %>">
+                <input type="text" placeholder="Enter your name" class="form-control" name="studentName" value="<%= student.studentName %>" required>
                 <label for="form-label">Father name: </label>
                 <br>
-                <input type="text" placeholder="Enter your Father name" class="form-control" name="fatherName"value="<%= student.fatherName %>">
+                <input type="text" placeholder="Enter your Father name" class="form-control" name="fatherName"value="<%= student.fatherName %>" required>
                 <label for="form-label">Aadhaar Card No: </label>
                 <br>
-                <input type="text" placeholder="Enter your Aadhaar no." class="form-control" name="aadharCardNo" value="<%= student.aadharCardNo %>">
+                <input type="text" placeholder="Enter your Aadhaar no." class="form-control" name="aadharCardNo" value="<%= student.aadharCardNo %>" required>
                 <label for="form-label">Mobile No: </label>
                 <br>
-                <input type="text" placeholder="Enter your Mobile no." class="form-control" name="mobileNo" value="<%= student.mobileNo %>">
+                <input type="text" placeholder="Enter your Mobile no." class="form-control" name="mobileNo" value="<%= student.mobileNo %>" required>
                 <input type="submit" class=" btn btn-outline-success mt-3 " value="Edit Student">
                 </form>
             </div>
